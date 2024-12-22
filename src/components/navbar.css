@@ -1,0 +1,108 @@
+/* Basic Navbar layout */
+body {
+    margin-top: 80px; /* Prevent content from overlapping with the navbar */
+  }
+.navbar {
+    background-color: rgba(221, 164, 95, 0.9);
+     /* Bright orange background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for a floating effect */
+    font-family: 'Poppins', sans-serif; /* Modern font */
+    position: fixed;
+    top:5px;
+    left:0;
+    width:100%;
+    box-shadow: 0 8px 9px rgba(0, 0, 0, 0.4);
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+
+  }
+  
+  /* Navbar Container */
+  .navbar-container {
+    display: flex;
+    /* Logo on the left, links on the right */
+    align-items: center;
+    max-width: 1500px;
+    margin: 0 auto; /* Center the container horizontally */
+    gap:2rem
+    /* padding: 0 1rem; */
+  }
+  
+  /* Logo Styling */
+  .navbar-logo {
+    text-decoration: none;
+    font-size: 2rem;  /* Adjust as needed */
+    font-weight: bold;
+    margin-left: 0; 
+    margin-bottom: 1%;
+  }
+  .navbar-logo-img {  /* Adjust the size as per your preference */
+    height: auto;
+    width: 120px; /* Adjust to the size of your image */
+    
+      /* Adds some space between the image and text */
+  }
+  
+  .navbar-logo h2 {
+    color: #ffffff; /* White text for the logo */
+    font-size: 2.5rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    text-decoration: none; /* Ensure no underline */
+  }
+  
+  .navbar-logo h2:hover {
+    color: #007bff; /* Blue color on hover */
+  }
+  
+  /* Links Container */
+  .navbar-links {
+    display: flex;
+    gap: 1.5rem; /* Space between links */
+    margin-left:55%;
+  }
+  
+  /* Link Styling */
+  .navbar-link {
+    background-color: #007bff; /* Blue background for links */
+    color: #fff; /* White text for contrast */
+    padding: 0.7rem 2rem; /* Add padding for box appearance */
+    border-radius: 5px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none; /* Remove underline from links */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .navbar-link:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    box-shadow: 0 4px 6px rgba(0, 123, 255, 0.4); /* Subtle shadow on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .navbar-container {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navbar-logo {
+      margin-bottom: 1rem;
+      text-align: center; /* Center the logo on mobile */
+    }
+  
+    .navbar-links {
+      flex-direction: column;
+      gap: 0.7rem;
+      width: 100%;
+    }
+  
+    .navbar-link {
+      width: 100%;
+      text-align: center; /* Make links full-width and center-aligned */
+    }
+  }
+  
