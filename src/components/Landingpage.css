@@ -1,0 +1,163 @@
+/* LandingPage.css */
+body{
+    left:0;
+}
+.landing-page {
+    font-family: 'Arial', sans-serif;
+    padding-top: 25px;
+    text-align: center;
+    background-color: #fafcfc;
+    
+  }
+  
+  .hero {
+    background-color: #4A90E2;
+    color: white;
+    padding: 100px 20px;
+    border-radius: 5px;
+    width:100%;
+    left:0;
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  
+  .description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+  }
+  
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    
+  }
+  
+  .cta-button {
+    background-color: #dda45f;
+    color: black;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 55px;
+    cursor: pointer;
+    transition: background-color 0.1s ease;
+    width:30%
+    
+  }
+  
+  .cta-button:hover {
+    background-color: #ea942a;
+  }
+  
+  .features {
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-around;
+    font-size:60px;
+    padding: 15px;
+  }
+  
+  .feature {
+    background-color: #9dc7fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+
+  }
+  .feature:hover{
+    background-color: #7da9de;
+
+  }
+  .feature img {
+    border-radius: 300px;
+    background-color: #b2d2f8; /* Makes the image corners rounded */
+    box-shadow: 15px 15px 60px 3px rgba(255, 255, 255, 0.8); /* Light white glow around the image */
+    transition: transform 0.3s ease, box-shadow 0.6s ease; /* Smooth animation */
+  }
+  
+  .feature h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .feature p {
+    font-size: 1.7rem;
+    color: #555;
+  }
+  .footer { /* Purple gradient-like background */
+    padding-top:25px;
+    color:black;
+    text-align: center;
+    width:100%
+  }
+  .footer-tagline{
+    background-color: #997ee9;
+    padding: 10px;
+    margin-left:4%;
+    font-weight:bold;
+    width: 90%;
+    border-radius: 20px;
+    border-style:ridge;
+  }
+  .footer-tagline h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  .footer-tagline p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .footer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+  }
+  
+  .footer-buttons .cta-button {
+    padding: 10px 20px;
+    background-color: #e7ebef;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .footer-buttons .cta-button:hover {
+    background-color: black;
+    color: white;
+  }
+  
+  .footer-links {
+    display: flex;
+    padding-top: 6px;
+    background-color: #c9e0fb;
+    justify-content:space-around;
+    margin-top: 40px;
+  }
+  
+  .footer-links h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    margin-left:8%;
+
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 6px;
+  }
+  
+  .footer-links li {
+    margin-bottom: 5px;
+    font-size: 1rem;
+  }
+  
