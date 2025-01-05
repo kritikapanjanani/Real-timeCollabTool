@@ -9,7 +9,7 @@ router.post('/register',async(req,res) => {
     const { name,email,password } = req.body;
     try{
         //check if the user already exists
-        const userExists = await user.findOne({ email });
+        const userExists = await User.findOne({ email });
         if (userExists) {
             return res.status(400).json({ message: 'User already exists' });
         }
@@ -19,7 +19,7 @@ router.post('/register',async(req,res) => {
     await user.save(); //hashing is handled by the pre-save hook in model
      
     // Generate a JSON Web Token
-    const token =JsonWebTokenError.sign({ id: user._id }, process.env.JWT_SECRET,{
+    const token =jwt.sign({ id: user._id }, process.env.JWT_SECRET,{
         expiresIn: '1h',
     });
     //Respond with the token
