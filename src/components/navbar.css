@@ -30,12 +30,15 @@ body {
   
   /* Logo Styling */
   .navbar-logo {
-    text-decoration: none;
     font-size: 2rem;  /* Adjust as needed */
     font-weight: bold;
     margin-left: 0; 
     margin-bottom: 1%;
   }
+  .navbar-logo:visited {
+    text-decoration: none ; /* Ensure no underline on visited links */
+  }
+  
   .navbar-logo-img {  /* Adjust the size as per your preference */
     height: auto;
     width: 120px; /* Adjust to the size of your image */
@@ -50,11 +53,13 @@ body {
     letter-spacing: 1.5px;
     cursor: pointer;
     transition: color 0.3s ease;
-    text-decoration: none; /* Ensure no underline */
   }
   
   .navbar-logo h2:hover {
     color: #007bff; /* Blue color on hover */
+  }
+  .navbar-logo:hover{
+    text-decoration: none;
   }
   
   /* Links Container */
@@ -71,8 +76,7 @@ body {
     padding: 0.7rem 2rem; /* Add padding for box appearance */
     border-radius: 5px;
     font-size: 1.2rem;
-    font-weight: 600;
-    text-decoration: none; /* Remove underline from links */
+    font-weight: 600; 
     transition: background-color 0.3s ease, transform 0.3s ease;
   }
   

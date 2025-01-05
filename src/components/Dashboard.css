@@ -1,0 +1,124 @@
+/* General Container Styling */
+.container {
+    max-width: 1200px !important;
+    margin:150px auto !important;
+    padding: 100px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title Styling */
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+/* Document Cards Grid */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Individual Card Styling */
+.card {
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width:400px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Card Body Styling */
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    color: #007bff;
+    margin-bottom: 10px;
+    text-transform: capitalize;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Link Button Styling */
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    align-self: flex-start;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Create New Document Button */
+.btn-success {
+    font-size: 1.2rem;
+    padding: 12px 20px;
+    font-weight: bold;
+    background-color: #28a745;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Text Centered */
+.text-center {
+    margin-top: 40px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .card-title {
+        font-size: 1.2rem;
+    }
+
+    .btn-primary, .btn-success {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
